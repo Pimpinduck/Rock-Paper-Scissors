@@ -4,14 +4,14 @@ import random
 yn = "y"
 
 print('Welcome to Rock Paper Scissors!')
-while (yn != "n"):
-    choice = input("Enter R(rock), P(paper), or S(scissors): ")
-    print("Rock!")
+while (yn != "n"): #Starting off the loop
+    choice = input("Enter R(rock), P(paper), or S(scissors): ") #Gathering the user's choice
+    print("Rock!") #Fun little intro
     print("Paper!")
     print("Scissors!")
     print("Shoot!")
-    randnum = random.randint(1, 3)
-    if choice == "R":
+    randnum = random.randint(1, 3) #Choosing a random choice for the computer
+    if choice == "R": # If statements to determine what should be displayed to the user at the end
         choiceS = "Rock"
         if randnum == 1:
             result = "Tie"
@@ -44,8 +44,8 @@ while (yn != "n"):
         if randnum == 3:
             result = "Tie"
             compChoice = "Scissors"
-    print("You chose " + choiceS + " and the computer chose " + compChoice)
+    print("You chose " + choiceS + " and the computer chose " + compChoice) #showing the result of the game to the user
     print("The result is a " + result + "!")
-    yn = input("Would you like to play again? (y or n): ")
+    yn = input("Would you like to play again? (y or n): ") #Play again Y or N
     
 
