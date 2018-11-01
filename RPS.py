@@ -4,7 +4,7 @@ import random
 yn = "y"
 
 print('Welcome to Rock Paper Scissors!')
-while (yn != "n"): #Starting off the loop
+while (yn != "n" and yn != "N"): #Starting off the loop
     choice = input("Enter R(rock), P(paper), or S(scissors): ") #Gathering the user's choice
     print("Rock!") #Fun little intro
     print("Paper!")
