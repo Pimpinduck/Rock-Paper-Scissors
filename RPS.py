@@ -11,7 +11,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
     print("Scissors!")
     print("Shoot!")
     randnum = random.randint(1, 3) #Choosing a random choice for the computer
-    if choice == "R": # If statements to determine what should be displayed to the user at the end
+    if choice == "R" or choice == "r": # If statements to determine what should be displayed to the user at the end
         choiceS = "Rock"
         if randnum == 1:
             result = "Tie"
@@ -22,7 +22,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
         if randnum == 3:
             result = "Win"
             compChoice = "Scissors"
-    if choice == "P":
+    if choice == "P" or choice == "p":
         choiceS = "Paper"
         if randnum == 1:
             result = "Win"
@@ -33,7 +33,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
         if randnum == 3:
             result = "Loss"
             compChoice = "Scissors"
-    if choice == "S":
+    if choice == "S" or choice == "s":
         choiceS = "Scissors"
         if randnum == 1:
             result = "Loss"
