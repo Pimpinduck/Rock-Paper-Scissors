@@ -22,7 +22,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
         if randnum == 3:
             result = "Win"
             compChoice = "Scissors"
-    if choice == "P" or choice == "p":
+    if choice == "P" or choice == "p": #Added more user options
         choiceS = "Paper"
         if randnum == 1:
             result = "Win"
@@ -33,7 +33,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
         if randnum == 3:
             result = "Loss"
             compChoice = "Scissors"
-    if choice == "S" or choice == "s":
+    if choice == "S" or choice == "s": #Added more user options
         choiceS = "Scissors"
         if randnum == 1:
             result = "Loss"
@@ -45,7 +45,7 @@ while (yn != "n" and yn != "N"): #Starting off the loop
             result = "Tie"
             compChoice = "Scissors"
     print("You chose " + choiceS + " and the computer chose " + compChoice) #showing the result of the game to the user
-    print("The result is a " + result + "!")
+    print("The result is a " + result + "!")  #Printing result absolutely
     yn = input("Would you like to play again? (y or n): ") #Play again Y or N
     
 
