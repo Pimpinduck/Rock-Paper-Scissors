@@ -1,5 +1,6 @@
 import sys
 import random
+import time
 
 yn = "y"
 
@@ -7,8 +8,11 @@ print('Welcome to Rock Paper Scissors!')
 while (yn != "n" and yn != "N"): #Starting off the loop
     choice = input("Enter R(rock), P(paper), or S(scissors): ") #Gathering the user's choice
     print("Rock!") #Fun little intro
+    time.sleep(1)
     print("Paper!")
+    time.sleep(1)
     print("Scissors!")
+    time.sleep(1)
     print("Shoot!")
     randnum = random.randint(1, 3) #Choosing a random choice for the computer
     if choice == "R" or choice == "r": # If statements to determine what should be displayed to the user at the end
